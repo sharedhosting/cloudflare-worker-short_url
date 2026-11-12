@@ -18,7 +18,6 @@ export default {
         : env.default;
     try {
       const parsed = new URL(redirectUrl);
-
       if (!['http:', 'https:'].includes(parsed.protocol)) {
         throw new Error();
       }
